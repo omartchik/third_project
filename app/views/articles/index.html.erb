@@ -1,9 +1,11 @@
-<h1>Articles#index</h1>
 <div class="container">
+<h1>Articles#index</h1>
 <%= link_to "Créer une novelle ", new_article_path %>
 <% @articles.each do |article| %>
   <h3><%= article.title %></h3>
   <p><%= article.content %></p>
   <h5><%= article.rate %></h5>
+  <%= link_to "editer un article", edit_article_path(article) %>
+  <%= link_to "Supprimer l'article", article_path(article), method: :delete %>
 <% end %>
 </div>
