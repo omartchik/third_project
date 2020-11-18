@@ -1,0 +1,9 @@
+<h1>Articles#index</h1>
+<div class="container">
+<%= link_to "Créer une novelle ", new_article_path %>
+<% @articles.each do |article| %>
+  <h3><%= article.title %></h3>
+  <p><%= article.content %></p>
+  <h5><%= article.rate %></h5>
+<% end %>
+</div>

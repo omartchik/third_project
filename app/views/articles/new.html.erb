@@ -1,0 +1,7 @@
+<h1>Articles#new</h1>
+<%= form_for @article do |f| %>
+  <%= f.text_field :title, title: "title" %>
+  <%= f.text_field :content, content: "content" %>
+  <%= f.number_field :rate, rate: "rating" %>
+  <%= f.submit "creer un article" %>
+<% end %>
