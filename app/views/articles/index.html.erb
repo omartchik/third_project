@@ -1,5 +1,7 @@
 <div class="container">
-<h1 class="title">Welcome to my page</h1>
+<h1 class="title">
+  <span id="title"></span>
+</h1>
 <h3>Here you can add your article 🖌</h3>
 <%= link_to "Créer un nouvel article ", new_article_path %>
 <% @articles.each do |article| %>
