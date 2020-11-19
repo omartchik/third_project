@@ -16,7 +16,9 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
 import {test} from '../components/test';
+import {dynamicContent} from '../components/content';
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
+  dynamicContent();
   test();
 });

@@ -4,7 +4,7 @@ const test = () => {
   if (h1) {
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY;
-      if (scrolled >= 120) {
+      if (scrolled >= 200) {
         h1.style.color ="gray";
         h3.style.color ="gray";
         h3.style.opacity ="0.3";

@@ -4,7 +4,7 @@
 <%= link_to "Créer un nouvel article ", new_article_path %>
 <% @articles.each do |article| %>
   <h3 class="title-content"><%= article.title %></h3>
-  <p class="content"><%= article.content %></p>
+  <p class="content" id="content"><%= article.content %></p>
   <h5><%= article.rate %></h5>
   <ul class="list-group">
     <% article.comments.each do |comment| %>
